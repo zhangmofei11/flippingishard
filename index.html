@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipping is Hard - A Precision Physics Platformer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B6B',
+                        secondary: '#4ECDC4',
+                        accent: '#FFE66D',
+                        dark: '#2C3E50',
+                        light: '#F7F9FC'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google tag (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-primary via-secondary to-accent shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white drop-shadow-lg">Flipping is Hard</a>
+                <div class="flex gap-6">
+                    <a href="index.html" class="text-white font-semibold hover:scale-110 transition-transform">Home</a>
+                    <a href="walkthrough.html" class="text-white font-semibold hover:scale-110 transition-transform">Walkthrough</a>
+                    <a href="tips.html" class="text-white font-semibold hover:scale-110 transition-transform">Tips</a>
+                    <a href="achievements.html" class="text-white font-semibold hover:scale-110 transition-transform">Achievements</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-dark via-primary/20 to-secondary/20 py-20 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="inline-block bg-accent text-dark font-bold px-6 py-2 rounded-full mb-6 shadow-lg animate-pulse">
+                Now on Steam
+            </div>
+            <h1 class="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary mb-6">
+                FLIPPING IS HARD
+            </h1>
+            <p class="text-2xl text-dark/80 mb-4 font-medium">
+                A 3D Precision Physics Platformer / Suffering Platformer
+            </p>
+            <p class="text-xl text-dark/60 mb-10 max-w-2xl mx-auto">
+                Control <span class="text-primary font-bold">Flippy</span>, the brave little brick phone, as he flips, shakes, and jumps his way through treacherous platforms to return to his owner!
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="#mechanics" class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/90 hover:scale-105 transition-all shadow-lg">
+                    Explore Mechanics
+                </a>
+                <a href="walkthrough.html" class="bg-secondary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-secondary/90 hover:scale-105 transition-all shadow-lg">
+                    Start Walkthrough
+                </a>
+            </div>
+
+            <!-- Game Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white/80 backdrop-blur rounded-2xl p-6 shadow-xl">
+                    <div class="text-4xl mb-2">📱</div>
+                    <div class="text-3xl font-black text-primary">Flippy</div>
+                    <div class="text-dark/60">Your Hero</div>
+                </div>
+                <div class="bg-white/80 backdrop-blur rounded-2xl p-6 shadow-xl">
+                    <div class="text-4xl mb-2">🎮</div>
+                    <div class="text-3xl font-black text-secondary">1-16</div>
+                    <div class="text-dark/60">Players Co-op</div>
+                </div>
+                <div class="bg-white/80 backdrop-blur rounded-2xl p-6 shadow-xl">
+                    <div class="text-4xl mb-2">⚡</div>
+                    <div class="text-3xl font-black text-accent">Physics</div>
+                    <div class="text-dark/60">Driven</div>
+                </div>
+                <div class="bg-white/80 backdrop-blur rounded-2xl p-6 shadow-xl">
+                    <div class="text-4xl mb-2">🏃</div>
+                    <div class="text-3xl font-black text-primary">Speedrun</div>
+                    <div class="text-dark/60">Ready</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Flipping Mechanic -->
+    <section id="mechanics" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-black text-center mb-16 text-dark">
+                The Unique <span class="text-primary">Flipping</span> Mechanic
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-primary/10 to-primary/5 rounded-3xl p-8 border-2 border-primary/20 hover:border-primary/50 transition-all hover:scale-105">
+                    <div class="text-6xl mb-4">🔄</div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">Flip & Rotate</h3>
+                    <p class="text-dark/70">
+                        Master the art of controlled flipping. Flippy rotates through the air with realistic physics - time your flips perfectly to land on narrow platforms.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-3xl p-8 border-2 border-secondary/20 hover:border-secondary/50 transition-all hover:scale-105">
+                    <div class="text-6xl mb-4">📳</div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">Shake & Jump</h3>
+                    <p class="text-dark/70">
+                        Use shake gestures or jump commands to build momentum. The more Flippy shakes, the more energy he builds for bigger jumps!
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-accent/10 to-accent/5 rounded-3xl p-8 border-2 border-accent/20 hover:border-accent/50 transition-all hover:scale-105">
+                    <div class="text-6xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold text-dark mb-3">Precision Landing</h3>
+                    <p class="text-dark/70">
+                        Every flip counts. Land precisely on platforms - one wrong move and Flippy tumbles into the void. Patience is key!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Features -->
+    <section class="py-20 px-4 bg-gradient-to-r from-dark to-dark/90 text-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-black text-center mb-16">
+                Game <span class="text-accent">Features</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex gap-4 items-start">
+                    <div class="bg-primary rounded-xl p-4 text-3xl shrink-0">🎮</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Physics-Driven Movement</h3>
+                        <p class="text-white/70">Every jump, flip, and landing is governed by realistic physics. Learn the momentum, embrace the chaos.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="bg-secondary rounded-xl p-4 text-3xl shrink-0">👥</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">1-16 Player Online Co-op</h3>
+                        <p class="text-white/70">Suffer together! Team up with up to 16 players online. More players, more chaos, more fun.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="bg-accent rounded-xl p-4 text-3xl shrink-0">⚔️</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">High Difficulty Platforming</h3>
+                        <p class="text-white/70">Built for players who love a challenge. Every level is a test of precision and patience.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="bg-primary rounded-xl p-4 text-3xl shrink-0">🏁</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Speedrun Potential</h3>
+                        <p class="text-white/70">Think you mastered Flippy? Race against the clock and prove you're the fastest flipper in town.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Developer -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-black text-dark mb-8">
+                About the Game
+            </h2>
+            <div class="bg-gradient-to-br from-light to-white rounded-3xl p-10 shadow-xl border border-dark/10">
+                <div class="text-6xl mb-6">🐴</div>
+                <h3 class="text-2xl font-bold text-primary mb-2">Elegant Horse Studios</h3>
+                <p class="text-dark/60 mb-6">Developer</p>
+                <p class="text-lg text-dark/80 leading-relaxed">
+                    <span class="font-bold text-primary">Flipping is Hard</span> is a passion project from Elegant Horse Studios,
+                    dedicated to creating challenging and rewarding platformer experiences that test the limits of player skill
+                    and perseverance.
+                </p>
+                <div class="mt-8 flex justify-center gap-4 flex-wrap">
+                    <span class="bg-gradient-to-r from-primary to-accent text-white font-bold px-6 py-3 rounded-full">
+                        Steam
+                    </span>
+                    <span class="bg-gradient-to-r from-secondary to-primary text-white font-bold px-6 py-3 rounded-full">
+                        3D Platformer
+                    </span>
+                    <span class="bg-gradient-to-r from-accent to-secondary text-dark font-bold px-6 py-3 rounded-full">
+                        Physics-Based
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-accent">Flipping is Hard</h3>
+                    <p class="text-white/60">A precision physics platformer that will test your skills and patience.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <div class="flex flex-col gap-2">
+                        <a href="index.html" class="text-white/60 hover:text-accent transition-colors">Home</a>
+                        <a href="walkthrough.html" class="text-white/60 hover:text-accent transition-colors">Walkthrough</a>
+                        <a href="tips.html" class="text-white/60 hover:text-accent transition-colors">Tips & Tricks</a>
+                        <a href="achievements.html" class="text-white/60 hover:text-accent transition-colors">Achievements</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Developer</h3>
+                    <p class="text-white/60">Elegant Horse Studios</p>
+                    <p class="text-white/40 text-sm mt-2">Available on Steam</p>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center text-white/40">
+                <p>&copy; 2024 Flipping is Hard Wiki. Fan-made project.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
