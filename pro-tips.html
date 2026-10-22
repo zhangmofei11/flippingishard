@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Tips - Flipping is Hard Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B6B',
+                        secondary: '#4ECDC4',
+                        accent: '#FFE66D',
+                        dark: '#2C3E50',
+                        light: '#F7F9FC'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google tag (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FS81H462WR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FS81H462WR');
+    </script>
+    <meta name="description" content="Advanced Flipping is Hard pro tips: momentum math, rotation timing, camera framing, co-op roles, training drills, and fixes for repeated failure patterns.">
+    <meta name="keywords" content="Flipping is Hard pro tips, advanced Flipping is Hard guide, momentum management, rotation timing, camera framing, co-op roles, training drills">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://flippingishard.world/#website",
+      "name": "Flipping is Hard",
+      "url": "https://flippingishard.world/",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://flippingishard.world/pro-tips.html#webpage",
+      "url": "https://flippingishard.world/pro-tips.html",
+      "name": "Pro Tips - Flipping is Hard Wiki",
+      "description": "Advanced Flipping is Hard pro tips: momentum math, rotation timing, camera framing, co-op roles, training drills, and fixes for repeated failure patterns.",
+      "isPartOf": {
+        "@id": "https://flippingishard.world/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://flippingishard.world/pro-tips.html#breadcrumb"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://flippingishard.world/pro-tips.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://flippingishard.world/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-primary via-secondary to-accent shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white drop-shadow-lg">Flipping is Hard</a>
+                <div class="flex gap-6">
+                    <a href="index.html" class="text-white font-semibold hover:scale-110 transition-transform">Home</a>
+                    <a href="walkthrough.html" class="text-white font-semibold hover:scale-110 transition-transform">Walkthrough</a>
+                    <a href="tips.html" class="text-white font-semibold hover:scale-110 transition-transform">Tips</a>
+                    <a href="pro-tips.html" class="text-white font-semibold hover:scale-110 transition-transform">Pro Tips</a>
+                    <a href="beginner-guide.html" class="text-white font-semibold hover:scale-110 transition-transform">Beginner Guide</a>
+                    <a href="achievements.html" class="text-white font-semibold hover:scale-110 transition-transform">Achievements</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-dark via-primary/20 to-accent/20 py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-black text-dark mb-4">
+                Pro Tips
+            </h1>
+            <p class="text-xl text-dark/70">Advanced techniques for players who already know how to flip</p>
+        </div>
+    </section>
+
+    <!-- Momentum Reasoning -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-black text-dark mb-8 flex items-center gap-3">
+                <span class="bg-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-2xl">📐</span>
+                Thinking in Momentum, Not Buttons
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-6 border-2 border-red-200">
+                    <h3 class="text-xl font-bold text-primary mb-3">The Arc Equation</h3>
+                    <p class="text-dark/70 mb-3">Every jump in Flipping is Hard is a projectile with a rotating body attached. That means two separate problems have to be solved at once: where Flippy goes, and how he is oriented when he arrives. Beginners solve them sequentially — land, then think about the next jump. Experts solve them in parallel.</p>
+                    <ul class="space-y-2 text-dark/70">
+                        <li>• <span class="font-bold text-red-600">Horizontal</span> speed comes from run momentum and shake charge, and it is only spent on travel.</li>
+                        <li>• <span class="font-bold text-red-600">Vertical</span> speed comes from the flip's launch impulse, and it is spent on height and hang time.</li>
+                        <li>• <span class="font-bold text-red-600">Rotation</span> is a separate budget: a full flip is one "beat" of time you have spent solving the first two.</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-6 border-2 border-teal-200">
+                    <h3 class="text-xl font-bold text-secondary mb-3">Spending the Right Budget</h3>
+                    <p class="text-dark/70 mb-3">The classic mistake is over-spending rotation. If you flip three times across a gap that only needs one, you land facing sideways or upside down and slide off. Under-spending is safer: an extra half rotation can be corrected in the air, but a full extra flip cannot.</p>
+                    <ul class="space-y-2 text-dark/70">
+                        <li>• <span class="font-bold text-teal-600">Wide gap, low wall</span> — spend rotation on speed, keep the flip count low.</li>
+                        <li>• <span class="font-bold text-teal-600">Short gap, high wall</span> — flip more, because the wall absorbs the overshoot.</li>
+                        <li>• <span class="font-bold text-teal-600">Narrow ledge</span> — arrive flat. Never arrive mid-rotation.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 bg-gradient-to-br from-dark to-dark/80 rounded-3xl p-8 text-white">
+                <h3 class="text-xl font-bold text-accent mb-4">Rotation Reference</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-white/80">
+                        <thead>
+                            <tr class="border-b border-white/20">
+                                <th class="py-2 pr-4 font-semibold text-accent">Jump type</th>
+                                <th class="py-2 pr-4 font-semibold text-accent">Best used for</th>
+                                <th class="py-2 pr-4 font-semibold text-accent">Rotation spend</th>
+                                <th class="py-2 font-semibold text-accent">Key risk</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-white/10">
+                                <td class="py-2 pr-4 font-semibold text-white">Single flip hop</td>
+                                <td class="py-2 pr-4">Short gaps, platform edges</td>
+                                <td class="py-2 pr-4">Minimal</td>
+                                <td class="py-2">Not enough distance if you charge fully</td>
+                            </tr>
+                            <tr class="border-b border-white/10">
+                                <td class="py-2 pr-4 font-semibold text-white">Double flip</td>
+                                <td class="py-2 pr-4">Standard mid-length gaps</td>
+                                <td class="py-2 pr-4">Medium</td>
+                                <td class="py-2">Late correction leaves no margin</td>
+                            </tr>
+                            <tr class="border-b border-white/10">
+                                <td class="py-2 pr-4 font-semibold text-white">Triple flip</td>
+                                <td class="py-2 pr-4">Long chasms, high arcs</td>
+                                <td class="py-2 pr-4">Heavy</td>
+                                <td class="py-2">Arriving rotated if the arc is short</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 pr-4 font-semibold text-white">Shake-charged leap</td>
+                                <td class="py-2 pr-4">Vertical climbs, wall transfers</td>
+                                <td class="py-2 pr-4">Choose deliberately</td>
+                                <td class="py-2">Extra height without extra reach</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camera -->
+    <section class="py-16 px-4 bg-gradient-to-r from-accent/10 to-primary/10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-black text-dark mb-8 flex items-center gap-3">
+                <span class="bg-accent text-dark w-12 h-12 rounded-xl flex items-center justify-center text-2xl">🎥</span>
+                Camera and Line-of-Sight Framing
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-dark mb-2">Look Ahead, Not Down</h3>
+                    <p class="text-dark/60">When you jump, the camera keeps Flippy roughly centred, so what you lose is the ground you just left. Look at the landing platform before you commit, not during the arc — mid-air camera movement is how people walk into the backs of walls.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-dark mb-2">Read the Silhouette</h3>
+                    <p class="text-dark/60">Platforms are easier to judge as shapes than as surfaces. Before a long jump, note how many body lengths of empty space separate the two ledges. Your own height is a free ruler — use Flippy himself as the measuring stick.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-lg font-bold text-dark mb-2">Bank the Angles</h3>
+                    <p class="text-dark/60">Diagonal jumps are easier to reason about than straight ones because you can see both the take-off and the landing at once. Set up diagonal lines wherever the level geometry allows, and reserve straight jumps for corridors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Co-op -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-black text-dark mb-8 flex items-center gap-3">
+                <span class="bg-secondary text-white w-12 h-12 rounded-xl flex items-center justify-center text-2xl">👥</span>
+                Coordinating a Full Lobby
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-6 border-2 border-secondary/20">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Split the Roles</h3>
+                    <p class="text-dark/70">With 16 phones in a lobby, nobody can watch everything. Assign an <span class="font-semibold">anchor</span> who owns the route, <span class="font-semibold">spotter</span> players who watch moving platforms, and <span class="font-semibold">freelancers</span> who test risky lines and report back. Without roles, a large group just fails loudly at the same time.</p>
+                </div>
+                <div class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-6 border-2 border-secondary/20">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Call Landmarks, Not Directions</h3>
+                    <p class="text-dark/70">"Left" and "right" get confused instantly across a team. Call stable world features instead — the tall pillar, the spinning bar, the red door. If your callout would mean different things to two players, it is not a callout yet.</p>
+                </div>
+                <div class="bg-gradient-to-br from-secondary/10 to-secondary/5 rounded-2xl p-6 border-2 border-secondary/20">
+                    <h3 class="text-xl font-bold text-secondary mb-2">Reset in Small Units</h3>
+                    <p class="text-dark/70">When a group fails repeatedly, shrink the unit. One player clears the hard section alone to learn it, then the rest follow the same line. Teams that attempt a new section with sixteen phones usually end up with sixteen slightly different bad routes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Drills -->
+    <section class="py-16 px-4 bg-gradient-to-r from-primary/10 to-secondary/10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-black text-dark mb-8 flex items-center gap-3">
+                <span class="bg-primary text-white w-12 h-12 rounded-xl flex items-center justify-center text-2xl">🏋️</span>
+                Training Drills That Actually Build Skill
+            </h2>
+            <div class="bg-white rounded-3xl p-8 shadow-xl">
+                <ul class="space-y-4 text-dark/70">
+                    <li><span class="font-bold text-primary">Repeat drill:</span> Pick the first gap of a chapter and attempt it ten times in a row without progressing. Consistency on a single obstacle is what actually clears the later ones.</li>
+                    <li><span class="font-bold text-primary">Rotation drill:</span> Deliberately land on the far edge of a wide platform instead of the middle. It builds the confidence to correct late and keeps you honest about where your arc actually ends.</li>
+                    <li><span class="font-bold text-primary">Momentum drill:</span> Run a full stretch of a level and stop moving dead. The distance where you lose speed shows you exactly which transitions need work.</li>
+                    <li><span class="font-bold text-primary">Charge drill:</span> Time the shake release by sound and feel rather than by watching the meter, so your hands learn the rhythm while your eyes stay on the route.</li>
+                    <li><span class="font-bold text-primary">Blind call drill:</span> In co-op, have one player describe the next platform purely by shape while the other jumps. It exposes how much your team relies on shared sight lines.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Failure Patterns -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-black text-dark mb-8 flex items-center gap-3">
+                <span class="bg-accent text-dark w-12 h-12 rounded-xl flex items-center justify-center text-2xl">🧩</span>
+                Failure Patterns and Their Fixes
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-red-50 rounded-xl p-5 border-2 border-red-200">
+                    <h3 class="font-bold text-red-600 mb-1">Short landing, fast rotation</h3>
+                    <p class="text-red-600/80 text-sm">You clear the gap but land rotated. Fix: drop one flip from the pattern and let the extra speed be spent on the run-up instead.</p>
+                </div>
+                <div class="bg-orange-50 rounded-xl p-5 border-2 border-orange-200">
+                    <h3 class="font-bold text-orange-600 mb-1">Landed but sliding off</h3>
+                    <p class="text-orange-600/80 text-sm">Contact happened at the rim. Fix: aim for the middle of the platform and accept a shorter jump rather than a longer one.</p>
+                </div>
+                <div class="bg-yellow-50 rounded-xl p-5 border-2 border-yellow-200">
+                    <h3 class="font-bold text-yellow-600 mb-1">Running out of momentum</h3>
+                    <p class="text-yellow-600/80 text-sm">You stop between jumps and rebuild from zero. Fix: land and re-launch immediately, even with a smaller flip, to keep the chain alive.</p>
+                </div>
+                <div class="bg-purple-50 rounded-xl p-5 border-2 border-purple-200">
+                    <h3 class="font-bold text-purple-600 mb-1">Overcharged and uncontrollable</h3>
+                    <p class="text-purple-600/80 text-sm">The shake auto-released at maximum while you were still turning. Fix: start charging earlier and release on your own count.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adsterra Ads -->
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/f7e2d8c9a3b1d4e5f6a7b8c9d0e1f2a3"></script>
+    <div id="container-f7e2d8c9a3b1d4e5f6a7b8c9d0e1f2a3"></div>
+
+    <script data-cfasync="false" src="https://bauval.org/14/f8e3d9c0b4a2e6f7b8c9d1e2f3a4b5c"></script>
+
+    <script>
+      atOptions = {
+        'key' : 'b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://bauval.org/22/b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3"></script>
+
+    <!-- Adsterra Ads -->
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/60d3e60323ea465360da3f598481dec8"></script>
+    <div id="container-60d3e60323ea465360da3f598481dec8"></div>
+
+    <script data-cfasync="false" src="https://bauval.org/14/86c86123f22dd7de6bdce73f99a05f47"></script>
+
+    <script>
+      atOptions = {
+        'key' : '114e3ac43a1966c45064e44b5ca27297',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://bauval.org/22/114e3ac43a1966c45064e44b5ca27297"></script>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-accent">Flipping is Hard</h3>
+                    <p class="text-white/60">A precision physics platformer that will test your skills and patience.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <div class="flex flex-col gap-2">
+                        <a href="index.html" class="text-white/60 hover:text-accent transition-colors">Home</a>
+                        <a href="walkthrough.html" class="text-white/60 hover:text-accent transition-colors">Walkthrough</a>
+                        <a href="tips.html" class="text-white/60 hover:text-accent transition-colors">Tips & Tricks</a>
+                        <a href="pro-tips.html" class="text-white/60 hover:text-accent transition-colors">Pro Tips</a>
+                        <a href="beginner-guide.html" class="text-white/60 hover:text-accent transition-colors">Beginner Guide</a>
+                        <a href="achievements.html" class="text-white/60 hover:text-accent transition-colors">Achievements</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Developer</h3>
+                    <p class="text-white/60">Elegant Horse Studios</p>
+                    <p class="text-white/40 text-sm mt-2">Available on Steam</p>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center text-white/40">
+                <p>&copy; 2024 Flipping is Hard Wiki. Fan-made project.</p>
+            </div>
+        </div>
+
+    <!-- Related Articles -->
+    <section class="max-w-4xl mx-auto py-8 px-4 border-t border-amber-900">
+        <h3 class="text-xl font-bold mb-4 text-white">You Might Also Like</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+        <a href="beginner-guide.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Beginner Guide - Flipping is Hard Wiki</span>
+        </a>
+        <a href="tips.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Tips & Tricks - Flipping is Hard Wiki</span>
+        </a>
+        <a href="walkthrough.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Walkthrough - Flipping is Hard Wiki</span>
+        </a>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
